@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accent Atlas</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="overlay">
+  <h1>Accent Atlas</h1>
+  <h3><em>“Every shore speaks its own music.”</em></h3>
+
+  <div class="map-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Blank_map_of_the_United_Kingdom.svg" class="map">
+
+    <button class="seal london" onclick="openAccent('cockney')">London</button>
+    <button class="seal liverpool" onclick="openAccent('scouse')">Liverpool</button>
+    <button class="seal newcastle" onclick="openAccent('geordie')">Newcastle</button>
+    <button class="seal birmingham" onclick="openAccent('brummie')">Birmingham</button>
+    <button class="seal rp" onclick="openAccent('rp')">RP</button>
+  </div>
+</div>
+
+<div id="scrollPanel" class="scroll hidden">
+  <span class="close" onclick="closeAccent()">✖</span>
+  <h2 id="accentTitle"></h2>
+  <div id="accentContent"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
